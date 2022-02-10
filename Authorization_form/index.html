@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>ДЗ-10</title>
+</head>
+
+<body>
+  <main class="main">
+    <div class="form__wrapper">
+      <form class="form" action="">
+        <h2 class="form__title">Регистрация</h2>
+        <div class="form__inputs-wrapper">
+          <div class="form__input-wrapper" id="login-field">
+            <label class="form__label" for="login">Email</label>
+            <span class="form__required-field">*</span>
+            <input class="form__input" id="login" type="email" placeholder="Введите почту">
+          </div>
+          <div class="form__input-wrapper" id="password-field">
+            <label class="form__label" for="password">Пароль</label>
+            <span class="form__required-field">*</span>
+            <input class="form__input" id="password" type="password" placeholder="Введите пароль ">
+          </div>
+          <div class="form__checkbox-wrapper" id="checkbox-field">
+            <span class="form__required-checkbox">*</span>
+            <input class="form__checkbox" type="checkbox" id="checkbox">
+            <div class="form__checkbox-mark"></div>
+            <label class="form__checkbox-label" for="checkbox">
+              Я согласен с <span>Правилами пользования приложением</span>
+            </label>
+          </div>
+        </div>
+        <button type='submit' class="form__button">Регистрация</button>
+      </form>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>

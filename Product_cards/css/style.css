@@ -1,0 +1,49 @@
+body {
+    background: rgb(181, 225, 233);
+}
+
+.card {
+    width: 225px;
+}
+
+.card-content {
+    background: rgb(160, 132, 132);
+    text-align: center;
+}
+
+.card-content h3 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: rgb(134, 9, 134);
+}
+
+.card-content-price {
+    font-weight: bold;
+    color:rgb(131, 26, 26);
+    font-size: 20px;
+}
+
+.card-content-description {
+    font-size: 20px;
+}
+
+.card-button-container {
+    height: 50px;
+}
+
+.card-button-container button {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    cursor: pointer;
+}
+
+.card-image-container {
+    height: 225px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content:space-around; 
+}

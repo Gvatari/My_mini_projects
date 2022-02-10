@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Калькулятор</title>
+</head>
+
+<body>
+    <script>
+        let num1 = prompt('Введите первое число');
+        if (num1 === '') {
+            alert("Первое число не указаано")
+        } else if (Number.isNaN(+num1)) { alert('Некорректный ввод чисел') }
+
+        let operator = prompt('Введите знак');
+        if (operator === '') {
+            alert("Не введён знак")
+        } else if (operator !== '+' && operator !== '-' && operator !== '/' && operator !== '*') {
+            alert('Программа не поддерживает такую операцию')
+        }
+
+        let num2 = prompt('Введите второе число');
+        if (num2 === '') {
+            alert("Второе число не указаано")
+        } else if (Number.isNaN(+num2)) { alert('Некорректный ввод чисел') }
+
+        let result = 0;
+
+        switch (operator) {
+            case '+':
+                result = +num1 + +num2;
+                break;
+            case '-':
+                result = +num1 - +num2;
+                break;
+            case '/':
+                result = +num1 / +num2;
+                break;
+            case '*':
+                result = +num1 * +num2;
+                break;
+        }
+        console.log(result);
+
+    </script>
+    </div>
+</body>
+
+</html>
